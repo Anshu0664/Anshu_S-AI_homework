@@ -1,0 +1,17 @@
+Question Title: Simplify the Compilation Process
+Question Link : https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution :
+touch build.sh
+echo "#!/bin/bash" > build.sh
+echo "gcc hello.c -o hello" >> build.sh
+chmod +x build.sh
+./build.sh
+./hello
+
+Approach:
+First, I created a file named build.sh.
+Then, I add the bash line and the command to compile hello.c into hello.
+then, I gave execute permission to the file.
+then, I ran ./build.sh to compile the program.
+Finally, I ran ./hello to see the output.
