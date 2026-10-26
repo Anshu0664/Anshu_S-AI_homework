@@ -1,0 +1,26 @@
+Question Title: API-Service Directory Workflow
+Question Link : https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+Solution:
+mkdir -p pipeline/stages/build
+mkdir -p pipeline/stages/test/unit/integration
+mkdir -p pipeline/env/staging
+mkdir -p pipeline/env/prod
+mkdir -p pipeline/artifacts/old
+
+chmod 750 pipeline/stages
+chmod 770 pipeline/artifacts
+chmod 700 pipeline/env
+
+touch pipeline/stages/build/app.py pipeline/stages/build/config.json pipeline/stages/build/NOTES.md
+echo "Build stage initialized." > pipeline/stages/build/NOTES.md
+
+touch pipeline/artifacts/old/build.log pipeline/artifacts/old/test.log pipeline/artifacts/old/deploy.log
+chmod 640 pipeline/artifacts/old/build.log pipeline/artifacts/old/test.log pipeline/artifacts/old/deploy.log
+
+Approach:
+First, I created the required directory structure for the pipeline stages, environments, and artifacts.
+then, I set the required permissions for the stages, artifacts, and environment directories.
+then, I created the `app.py`, `config.json`, and `NOTES.md` files inside the build directory.
+then, I added the message "Build stage initialized." to the `NOTES.md` file.
+then, I created the build, test, and deploy log files inside the old artifacts directory and set their permissions to 640.
