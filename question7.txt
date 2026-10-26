@@ -1,0 +1,16 @@
+Question Title: The Missing Project Credentials
+Question Link : https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution:
+cd EventApp
+ls -aR
+grep -r "DB_PASSWORD" .
+pwd
+cat config/.env > db_password.txt
+
+Approach:
+First, I entered the EventApp directory.
+then, I checked all files and folders, including hidden files and subdirectories.
+After that, I searched for the `DB_PASSWORD` entry.
+Then, I checked my current directory using `pwd`.
+Finally, I copied the contents of `config/.env` into a new file named `db_password.txt` inside the `EventApp` directory.
