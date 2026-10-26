@@ -1,0 +1,26 @@
+Question: The Internship Project Setup
+Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+cd box 
+cd client-app
+ls
+git init
+echo "hello sir" > app.js
+echo "hello sir" > index.html
+git add app.js index.html
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git remote -v
+git push -u origin main
+git log
+
+
+Approach:
+
+First, I entered the `box` directory and then the `client-app` directory.
+then, I checked the existing files and initialized a Git repository.
+then, I created the `app.js` and `index.html` files and added the text "hello sir" to both files.
+tehn, I added both files to Git and committed them with the message "Initial client files".
+then, I added the remote GitHub repository and checked the remote details using `git remote -v`.
+then, I pushed the code to the `main` branch and checked the commit history using `git log`.
